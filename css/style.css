@@ -1,0 +1,146 @@
+/* CSS Document */
+@font-face {
+    font-family: "MilkyHoney";
+    src: url("../fonts/Milky_Honey.otf");
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color:#333333;
+    font-size: 21px;
+    font-family: MilkyHoney;
+}
+
+a {color: #ef273e; text-decoration: none;}
+a:hover {color:#cd1600;}
+a:active {color: #ef273e;}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 10%;
+    border-bottom: 1px solid lightgray;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: inline;
+    margin: 0 2em;
+    font-size: 1.2em;
+    color: lightslategray;
+    transition: all 200ms ease-in-out;
+}
+
+.active{
+    color: #ef273e;
+    font-weight: bolder;
+}
+
+.account{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.account i {
+    color: black;
+    position: relative;
+    top: 5px;
+    margin-right: 0.7em;
+    font-size: 1.5em;
+    transition: all 200ms ease-in-out;
+}
+
+.account i:hover {
+    color: #ef273e;
+    cursor: pointer;
+}
+
+.btn{
+    color: black;
+    position: relative;
+    top: 5px;
+    padding: 0.7em 1.7em;
+    font-size: 0.8em;
+    border: solid #1a1a1a 2px;
+    border-radius: 50px;
+    margin: 0 5px;
+    background-color: white;
+    box-shadow: 0px 0px 0px #1a1a1a;
+    transition: all 250ms ease-in-out;
+    font-family: MilkyHoney;
+}
+
+.btn:hover{
+    top: 0px;
+    transform: translate(5px, 0);
+    color: white;
+    background: #ef273e;
+    box-shadow: -5px 5px 0px #1a1a1a;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(100vh - 128px - 54.59px);
+}
+
+#left{
+    background-color: #ef273e22;
+    border-radius: 30px;
+    padding: 1em 2em;
+    width: 55%;
+    margin: auto 0;
+}
+
+#left p{
+    line-height: 2em;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    width: 30%;
+}
+
+#right a{
+    margin: 10px 0;
+}
+
+#right a i{
+    margin-right: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    font-weight: light;
+	color: black;
+    border-top: 1px solid lightgray;
+}
+
+
