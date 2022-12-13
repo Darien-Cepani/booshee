@@ -1,0 +1,88 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 10%;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2em;
+}
+
+.logo a img {
+  height: 80px;
+  width: 80px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: inline;
+  margin: 0 2em;
+  font-size: 1.2em;
+  color: lightslategray;
+  transition: all 200ms ease-in-out;
+}
+
+.active {
+  color: #ef273e !important;
+  font-weight: bolder !important;
+}
+
+.account {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  bottom: 5px !important;
+}
+
+.account i {
+  color: black;
+  position: relative;
+  top: 5px;
+  margin-right: 0.7em;
+  font-size: 1.5em;
+  transition: all 200ms ease-in-out;
+}
+
+.account i:hover {
+  color: #ef273e;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 1em;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2em;
+  }
+
+  .logo a img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .nav-link {
+    margin: 0 1em;
+    font-size: 1em;
+  }
+
+  .account i {
+    font-size: 1.2em;
+  }
+
+  .account .btn {
+    font-size: 0.7em;
+  }
+}

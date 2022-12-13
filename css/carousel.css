@@ -1,53 +1,56 @@
 .slider {
-	width: 100%;
+  width: 100%;
 }
 .slider input {
-	display: none;
+  display: none;
 }
 .testimonials {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-	min-height: 450px;
-	perspective: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+  perspective: 80px;
 }
 .testimonials .item {
-	width: 380px;
-    min-height: 400px;
-	padding: 30px;
-	border-radius: 20px;
-	background-color: white;
-	position: absolute;
-	top: 0;
-	box-sizing: border-box;
-	text-align: center;
-	transition: transform 0.4s;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-	user-select: none;
-	cursor: pointer;
+  width: 380px;
+  min-height: 400px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  cursor: pointer;
 }
 .testimonials .item img {
-    max-width: 320px;
-	max-height: 370px;
-	object-fit: fill;
-	border-radius: 20px;
+  max-width: 320px;
+  max-height: 370px;
+  object-fit: fill;
+  border-radius: 20px;
 }
 
 .dots {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 .dots label {
-	height: 5px;
-	width: 5px;
-	border-radius: 50%;
-	cursor: pointer;
-	background-color: #413B52;
-	margin: 7px;
-	transition-duration: 0.2s;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #413b52;
+  border: 1px solid #413b52;
+  margin: 7px;
+  transition-duration: 0.2s;
+  z-index: 100;
 }
 
 #t-1:checked ~ .dots label[for="t-1"],
@@ -55,8 +58,8 @@
 #t-3:checked ~ .dots label[for="t-3"],
 #t-4:checked ~ .dots label[for="t-4"],
 #t-5:checked ~ .dots label[for="t-5"] {
-	transform: scale(2);
-	background-color: #fff;
+  transform: scale(2);
+  background-color: #fff;
 }
 #t-1:checked ~ .dots label[for="t-2"],
 #t-2:checked ~ .dots label[for="t-1"],
@@ -66,38 +69,38 @@
 #t-4:checked ~ .dots label[for="t-3"],
 #t-4:checked ~ .dots label[for="t-5"],
 #t-5:checked ~ .dots label[for="t-4"] {
-	transform: scale(1.5);
+  transform: scale(1.5);
 }
 #t-1:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-4"],
 #t-3:checked ~ .testimonials label[for="t-5"],
 #t-4:checked ~ .testimonials label[for="t-1"],
 #t-5:checked ~ .testimonials label[for="t-2"] {
-	transform: translate3d(600px, 0, -180px) rotateY(-25deg);
-	z-index: 2;
+  transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+  z-index: 2;
 }
 #t-1:checked ~ .testimonials label[for="t-2"],
 #t-2:checked ~ .testimonials label[for="t-3"],
 #t-3:checked ~ .testimonials label[for="t-4"],
 #t-4:checked ~ .testimonials label[for="t-5"],
 #t-5:checked ~ .testimonials label[for="t-1"] {
-	transform: translate3d(300px, 0, -90px) rotateY(-15deg);
-	z-index: 3;
+  transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+  z-index: 3;
 }
 #t-2:checked ~ .testimonials label[for="t-1"],
 #t-3:checked ~ .testimonials label[for="t-2"],
 #t-4:checked ~ .testimonials label[for="t-3"],
 #t-5:checked ~ .testimonials label[for="t-4"],
 #t-1:checked ~ .testimonials label[for="t-5"] {
-	transform: translate3d(-300px, 0, -90px) rotateY(15deg);
-	z-index: 3;
+  transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+  z-index: 3;
 }
 #t-3:checked ~ .testimonials label[for="t-1"],
 #t-4:checked ~ .testimonials label[for="t-2"],
 #t-5:checked ~ .testimonials label[for="t-3"],
 #t-2:checked ~ .testimonials label[for="t-5"],
 #t-1:checked ~ .testimonials label[for="t-4"] {
-	transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+  transform: translate3d(-600px, 0, -180px) rotateY(25deg);
 }
 #t-1:checked ~ .testimonials label[for="t-1"],
 #t-2:checked ~ .testimonials label[for="t-2"],
@@ -105,5 +108,36 @@
 #t-4:checked ~ .testimonials label[for="t-4"],
 #t-5:checked ~ .testimonials label[for="t-4"],
 #t-5:checked ~ .testimonials label[for="t-5"] {
-	z-index: 4;
+  z-index: 4;
+}
+
+@media only screen and (max-width: 1286px) {
+  .testimonials {
+    perspective: 50px;
+  }
+  .testimonials .item {
+    width: 280px;
+    min-height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.4s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    cursor: pointer;
+  }
+  .testimonials .item img {
+    max-width: 220px;
+    max-height: 270px;
+    object-fit: fill;
+    border-radius: 20px;
+  }
+
+  .dots {
+    margin-top: 0;
+  }
 }
